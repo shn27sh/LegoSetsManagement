@@ -1,0 +1,29 @@
+{
+  "count": 2,
+  "next": "https://rebrickable.com/api/v3/lego/sets/6024-1/parts/?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 1,
+      "inventory_id": 1001,
+      "part": {
+        "part_num": "3024",
+        "name": "Plate 1 x 1",
+        "part_img_url": "https://cdn.rebrickable.com/media/parts/elements/3024.jpg",
+        "external_ids": {
+          "BrickLink": ["3024"]
+        }
+      },
+      "color": {
+        "id": 0,
+        "name": "Black",
+        "rgb": "05131D",
+        "is_trans": false
+      },
+      "quantity": 4,
+      "is_spare": false,
+      "is_alternate": false,
+      "element_img_url": "https://cdn.rebrickable.com/media/parts/elements/302400.jpg"
+    }
+  ]
+}

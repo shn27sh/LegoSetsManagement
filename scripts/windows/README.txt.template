@@ -1,0 +1,38 @@
+LEGO Collection Manager (Windows portable)
+==========================================
+
+Thank you for using LEGO Collection Manager!
+
+QUICK START
+-----------
+1. Unzip this folder anywhere (for example Desktop\LEGO-Collection-Manager).
+2. Double-click "Launch LEGO Collection Manager.bat".
+3. Your web browser opens the app. Keep the black window open while you use it.
+
+YOUR COLLECTION DATA
+--------------------
+Your database and logs are stored in the "data" folder next to this README.
+When you upgrade to a newer ZIP, copy your old "data" folder (and config.env if
+you created one) into the new folder. Do not delete "data" unless you want a
+fresh empty collection.
+
+REBRICKABLE SYNC (OPTIONAL)
+---------------------------
+To download set data from Rebrickable:
+1. Create a free API key at https://rebrickable.com/api/
+2. Copy "config.env.example" to "config.env" in this folder.
+3. Open "config.env" in Notepad and paste your key after REBRICKABLE_API_KEY=
+4. Save the file and launch the app again.
+
+TROUBLESHOOTING
+---------------
+- "Windows protected your PC" / SmartScreen: click More info, then Run anyway.
+  This app is not code-signed yet.
+- Port already in use: close other copies of the app, or edit config.env and set
+  LCM_PORT=8001 (then open http://127.0.0.1:8001/ in your browser).
+- Blank page: wait a few seconds and refresh. Check that the "data" folder exists.
+- Antivirus blocked the app: allow "lcm-server.exe" in your security software.
+
+VERSION
+-------
+@VERSION@

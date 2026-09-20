@@ -1,0 +1,25 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": "https://rebrickable.com/api/v3/lego/sets/6024-1/parts/?page=1",
+  "results": [
+    {
+      "id": 2,
+      "inventory_id": 1002,
+      "part": {
+        "part_num": "3005",
+        "name": "Brick 1 x 1",
+        "part_img_url": "https://cdn.rebrickable.com/media/parts/elements/3005.jpg"
+      },
+      "color": {
+        "id": 1,
+        "name": "Blue",
+        "rgb": "0055BF",
+        "is_trans": false
+      },
+      "quantity": 2,
+      "is_spare": true,
+      "is_alternate": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Install with: pip install -r requirements-dev.txt
+# (Used when editable install is not required.)
+
+alembic>=1.14.0
+fastapi>=0.115.0
+httpx>=0.27.0
+python-dotenv>=1.0.0
+python-multipart>=0.0.9
+pytest>=8.0.0
+sqlalchemy>=2.0.36
+uvicorn[standard]>=0.32.0

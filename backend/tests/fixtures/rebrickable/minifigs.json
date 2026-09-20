@@ -1,0 +1,16 @@
+{
+  "count": 1,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "set_num": "cop01",
+      "quantity": 1,
+      "set": {
+        "set_num": "cop01",
+        "name": "Police Officer",
+        "set_img_url": "https://cdn.rebrickable.com/media/sets/cop01.jpg"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+---
+description: Project rules for the LEGO Collection Manager
+alwaysApply: true
+---
+
+# LEGO Collection Manager - Cursor Rules
+
+## Project goal
+
+Build a local-first LEGO collection manager that imports owned LEGO set IDs from CSV, fetches set inventory data from allowed online sources, stores data locally, and provides a web UI for browsing sets, parts, minifigures, stickers, and missing items.
+
+## Authoritative specifications
+
+Product requirements, REST contracts, database schema, CSV/Rebrickable rules, phased delivery, and the testing strategy live under **`docs/`** (see **`docs/README.md`** for an index). Cursor agent briefs under **`.cursor/agents/`** describe contributor roles and must **link** to those files rather than restating them.
+
+## Preferred stack
+
+- Backend: Python 3.12+
+- Backend framework: FastAPI
+- ORM: SQLAlchemy
+- Database: SQLite for MVP
+- Migrations: Alembic
+- Testing: pytest
+- Frontend: React + TypeScript
+- Frontend build tool: Vite
+- Frontend testing: Vitest
+- API style: REST JSON
+
+## Rules
+
+- Prefer documented APIs.
+- Rebrickable API is the first importer target.
+- Keep changes small and reviewable.
+- Add or update tests for every behavior change.
+- Do not introduce large frameworks without justification.
+- Keep database models normalized.
+- Store source metadata for imported records.
+- Use environment variables for API keys.
+- Never commit real API keys or secrets.
+- Use `.env.example` for required environment variables.
+- Tests must not call real external APIs.
+- External API responses must be mocked in tests.
+
+## Important domain concepts
+
+- A LEGO set has a set number, name, year, theme, image, and source metadata.
+- An owned set represents the user's ownership of a set.
+- A part can have multiple identifiers or aliases.
+- A set inventory links sets to parts with quantity, color, image, and source.
+- A minifigure can belong to a set and may have its own parts.
+- A stickered part may be a distinct inventory item from a plain part.
+- Missing items are tracked per owned set.
+
+## Testing expectations
+
+Backend:
+- Unit tests for CSV parsing
+- Unit tests for importer mapping
+- Database model tests
+- API endpoint tests
+- Search tests
+- Missing item tracking tests
+
+Frontend:
+- Component tests for set list
+- Component tests for set detail
+- Search behavior tests
+- Missing item UI tests

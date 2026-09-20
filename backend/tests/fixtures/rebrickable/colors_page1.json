@@ -1,0 +1,13 @@
+{
+  "count": 1,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": 0,
+      "name": "Black",
+      "rgb": "05131D",
+      "is_trans": false
+    }
+  ]
+}
