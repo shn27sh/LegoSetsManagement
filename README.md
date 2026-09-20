@@ -1,6 +1,6 @@
-# LEGO Collection Manager
+# LEGO Sets Management
 
-Local-first LEGO collection manager (MVP in progress). This repository contains a **FastAPI** backend, a **React + Vite** frontend, and product documentation under `docs/`.
+Local-first LEGO Sets manager (MVP in progress). This repository contains a **FastAPI** backend, a **React + Vite** frontend, and product documentation under `docs/`.
 
 ## Prerequisites
 
